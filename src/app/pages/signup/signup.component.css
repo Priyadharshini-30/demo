@@ -1,0 +1,17 @@
+.full-width
+{
+    width: 100%;
+}
+.mat-card
+{
+    margin-top: 20px;
+    background-image:linear-gradient(to right,rgb(205, 86, 86),rgb(213, 213, 58));
+}
+
+.bg{
+    background-image: url("../../../assets/bgfinal.jpg");
+    height: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

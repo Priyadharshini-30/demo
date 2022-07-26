@@ -1,0 +1,10 @@
+<mat-card>
+    <mat-action-list>
+        <div mat-subheader>Available Categories</div>
+        <button [routerLink]="'/user/quiz/'+cid" mat-list-item ><mat-icon mat-list-icon>quiz</mat-icon>All Quizes</button>
+        <button [routerLink]="'/user/quiz/'+c.cid" mat-list-item *ngFor="let c of categories">
+            <mat-icon mat-list-icon>quiz</mat-icon>{{c.titile}}
+        </button>
+        <button mat-list-item routerLink="" (click)="auth.logoutUser()"><mat-icon mat-list-icon>logout</mat-icon>Logout</button>
+    </mat-action-list>
+</mat-card>

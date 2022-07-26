@@ -1,0 +1,32 @@
+.bg {
+    background-image: url("../../../assets/bgfinAL.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+
+.col-md-4 h4{
+    color:brown;
+    font-size: 70px;
+    line-height: 65px;
+}
+
+.col-md-4 p{
+    font-size: 20px;
+}
+
+.container1{
+    
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    height: 30%;
+    background-image:linear-gradient(to right,rgb(205, 86, 86),rgb(213, 213, 58));
+
+}
+
+.container{
+    text-align: center;
+}
