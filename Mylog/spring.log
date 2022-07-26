@@ -1,0 +1,46 @@
+2022-07-25 09:54:04 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-25 09:54:04 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-25 09:54:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 09:54:05 - Finished Spring Data repository scanning in 96 ms. Found 4 JPA repository interfaces.
+2022-07-25 09:54:06 - Tomcat initialized with port(s): 8080 (http)
+2022-07-25 09:54:06 - Starting service [Tomcat]
+2022-07-25 09:54:06 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-25 09:54:06 - Initializing Spring embedded WebApplicationContext
+2022-07-25 09:54:06 - Root WebApplicationContext: initialization completed in 2722 ms
+2022-07-25 09:54:07 - HikariPool-1 - Starting...
+2022-07-25 09:54:07 - HikariPool-1 - Start completed.
+2022-07-25 09:54:07 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/exam'
+2022-07-25 09:54:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-25 09:54:07 - HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-25 09:54:08 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-25 09:54:08 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-25 09:54:09 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-25 09:54:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 09:54:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 09:54:09 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64f22aad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76c308f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@24f62781, org.springframework.security.web.header.HeaderWriterFilter@30dbe5bc, org.springframework.security.web.authentication.logout.LogoutFilter@68228003, com.example.demo.filter.JwtFilter@24d25240, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22267485, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@746732e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b7d7ee3, org.springframework.security.web.session.SessionManagementFilter@4241c5d, org.springframework.security.web.access.ExceptionTranslationFilter@4b6c006a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a41b8e1]
+2022-07-25 09:54:10 - LiveReload server is running on port 35729
+2022-07-25 09:54:10 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-25 09:54:10 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-25 22:57:32 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-25 22:57:32 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-25 22:57:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 22:57:34 - Finished Spring Data repository scanning in 110 ms. Found 4 JPA repository interfaces.
+2022-07-25 22:57:35 - Tomcat initialized with port(s): 8080 (http)
+2022-07-25 22:57:35 - Starting service [Tomcat]
+2022-07-25 22:57:35 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-25 22:57:35 - Initializing Spring embedded WebApplicationContext
+2022-07-25 22:57:35 - Root WebApplicationContext: initialization completed in 2723 ms
+2022-07-25 22:57:35 - HikariPool-1 - Starting...
+2022-07-25 22:57:35 - HikariPool-1 - Start completed.
+2022-07-25 22:57:35 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/exam'
+2022-07-25 22:57:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-25 22:57:36 - HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-25 22:57:36 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-25 22:57:36 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-25 22:57:37 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-25 22:57:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 22:57:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 22:57:38 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@272ce03a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b311e6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7de13e2, org.springframework.security.web.header.HeaderWriterFilter@61f3a28f, org.springframework.security.web.authentication.logout.LogoutFilter@5cb00b17, com.example.demo.filter.JwtFilter@35be342c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a752502, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@150970de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fa31b9a, org.springframework.security.web.session.SessionManagementFilter@d07365a, org.springframework.security.web.access.ExceptionTranslationFilter@5905e972, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3849cdf]
+2022-07-25 22:57:39 - LiveReload server is running on port 35729
+2022-07-25 22:57:39 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-25 22:57:39 - Tomcat started on port(s): 8080 (http) with context path ''
