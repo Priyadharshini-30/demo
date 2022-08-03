@@ -45,6 +45,14 @@ public class Quiz {
 		this.noOfQuestions = noOfQuestions;
 		this.category=category;
 	}
+	
+	public Quiz(String title, String description, String maxMarks, String noOfQuestions) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.maxMarks = maxMarks;
+		this.noOfQuestions = noOfQuestions;
+	}
 
 	@ManyToOne(fetch=FetchType.EAGER)
 	private Category category;

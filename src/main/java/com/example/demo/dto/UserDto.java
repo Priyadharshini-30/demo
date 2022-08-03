@@ -20,7 +20,13 @@ public class UserDto {
 	private String phone;
 	private String profile;
 	private String userType;
-
+	
+	public UserDto(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+	
 	public int getId() {
 		return id;
 	}

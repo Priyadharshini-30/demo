@@ -27,8 +27,7 @@ public class QuizServiceImpl implements QuizService {
 	
 	@Override
 	public Quiz addQuiz(Quiz quiz) {
-		
-		
+
 		logger.info("Adding quiz");
 		return this.quixRepository.save(quiz);
 	}

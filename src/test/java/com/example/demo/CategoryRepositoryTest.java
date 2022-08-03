@@ -1,7 +1,13 @@
 package com.example.demo;
 
 
+import static org.junit.jupiter.api.Assertions.fail;
+
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
 import org.assertj.core.api.Assertions;
+import org.assertj.core.api.ObjectAssert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -14,6 +20,7 @@ import com.example.demo.controller.CategoryController;
 import com.example.demo.model.exam.Category;
 import com.example.demo.repo.CategoryRepository;
 import com.example.demo.service.CategoryService;
+import com.example.demo.service.impl.CategoryServiceImpl;
 
 
 @SpringBootTest
@@ -66,6 +73,7 @@ class CategoryRepositoryTest {
 		Assertions.assertThat(category3).hasFieldOrPropertyWithValue("cid", category3.getCid());	
 	}
 	
+	
 	@Test
 	@Order(3)
 	void getCategoryTest()
@@ -74,10 +82,19 @@ class CategoryRepositoryTest {
 		categoryRepo.save(category4);
 		Assertions.assertThat(category4).hasFieldOrPropertyWithValue("cid", category4.getCid());
 		this.categoryService.getCategory(category4.getCid());
-		logger.info("findById() works perfectly");
-			
+		logger.info("findById() works perfectly");	
 	}
 	
+	@Test
+	void getCategoryNotPresent() {
+		Category category4 =new Category("Java program","Java questions");
+		try {
+			this.categoryService.getCategory(50L);
+	        fail();
+	    } catch (java.util.NoSuchElementException e) {}
+	}
+	
+
 	@Test
 	@Order(4)
 	void deleteCategoryTest() 

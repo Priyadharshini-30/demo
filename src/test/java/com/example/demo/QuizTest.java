@@ -4,6 +4,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -38,6 +39,18 @@ class QuizTest {
 	}
 	
 	@Test
+	void getQuizzesOfCatTest() {
+		List<Quiz> quiz=Stream
+				.of(new Quiz(1L,"C quiz","C questions","50","50",new Category("program","prgm qns"))
+						,new Quiz(2L,"C++ quiz","C++ questions","50","50",new Category("program","prgm qns"))).collect(
+								Collectors.toList());
+		Category category=new Category("program","prgm qns");
+		when(this.quizRepo.findBycategory(category)).thenReturn(quiz);
+		Assertions.assertEquals(quiz, this.quizService.getQuizzesOfCat(category));
+	}
+	
+	
+	@Test
 	void getQuizById() {
 		Optional<Quiz> quiz=Optional.ofNullable(new Quiz(1L,"C quiz","C questions","50","50",new Category("program","prgm qns")));
 		when(this.quizRepo.findById(1L)).thenReturn(quiz);
@@ -46,8 +59,20 @@ class QuizTest {
 	}
 	
 	@Test
+	void getQuizNotPresent() {
+		
+		try {
+			this.quizService.getQuiz(null);
+		}catch (java.util.NoSuchElementException e) {}
+		
+		
+	}
+	
+	@Test
 	void saveQuizTest() {
 		Quiz quiz=new Quiz(1L,"C quiz","C questions","50","50",new Category("program","prgm qns"));
+		quiz.getCategory();
+		quiz.isActive();
 		when(this.quizRepo.save(quiz)).thenReturn(quiz);
 		Assertions.assertEquals(quiz, this.quizService.addQuiz(quiz));
 	}
@@ -55,6 +80,10 @@ class QuizTest {
 	@Test
 	void deleteQuizTest() {
 		Quiz quiz=new Quiz(1L,"C quiz","C questions","50","50",new Category("program","prgm qns"));
+		quiz.setTitle("C new quiz");
+		quiz.setDescription("C new questions");
+		quiz.setMaxMarks("100");
+		quiz.setNoOfQuestions("100");
 		this.quizService.deleteQuiz(1L);
 		verify(quizRepo,times(1)).deleteById(1L);
 	}
@@ -66,8 +95,13 @@ class QuizTest {
 		when(this.quizRepo.save(quiz)).thenReturn(quiz);
 		Assertions.assertEquals(quiz, this.quizService.updateQuiz(quiz));
 		Assertions.assertEquals(2L, quiz.getQid());
+		Assertions.assertEquals("C quiz", quiz.getTitle());
+		Assertions.assertEquals("C questions", quiz.getDescription());
+		Assertions.assertEquals("50", quiz.getNoOfQuestions());
+		Assertions.assertEquals("50", quiz.getMaxMarks());
 		Assertions.assertNotEquals(1L, quiz.getQid());	
 	}
+	
 	
 
 }

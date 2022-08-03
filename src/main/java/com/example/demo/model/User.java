@@ -1,14 +1,6 @@
 package com.example.demo.model;
 
-
-
-
-
-
 import javax.persistence.*;
-
-
-
 
 @Entity
 @Table(name="users")
@@ -26,13 +18,18 @@ public class User{
 	private String profile;
 	private String userType;
 	
-	
-	
+
 	public User() {
 		super();
 	}
 	
+	public User(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
 	
+
 	public int getId() {
 		return id;
 	}

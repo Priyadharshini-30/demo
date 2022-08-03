@@ -43,6 +43,7 @@ public class QuizDto {
 		this.maxMarks = maxMarks;
 		this.noOfQuestions = noOfQuestions;
 	}
+	
 
 	@ManyToOne(fetch=FetchType.EAGER)
 	private Category category;
