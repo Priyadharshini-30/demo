@@ -1,6 +1,6 @@
 .bg {
-    background-image: url("../../../assets/bgfinAL.jpg");
-    height:100%;
+    background-image: url("../../../assets/blurbg.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,10 +21,8 @@
     
     position: absolute;
     text-align: center;
-    width: 70%;
+    width: 80%;
     height: 30%;
-    background-image:linear-gradient(to right,rgb(205, 86, 86),rgb(213, 213, 58));
-
 }
 
 .container{

@@ -2,17 +2,12 @@
 {
     width: 100%;
 }
-.mat-card
-{
-    background-image:linear-gradient(to right,rgb(205, 86, 86),rgb(213, 213, 58));
-    margin-left: 30px;
-}
 .bg {
-    background-image: url("../../../assets/bgfinal.jpg");
-    height: 100%;
+    background-image: url("../../../assets/blurbg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
  }
  .container1{
     position: absolute;

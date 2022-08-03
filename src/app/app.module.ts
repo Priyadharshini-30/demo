@@ -10,7 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -34,7 +34,6 @@ import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.compo
 import { AddQuesComponent } from './pages/admin/add-ques/add-ques.component';
 import { UserSidebarComponent } from './pages/user/user-sidebar/user-sidebar.component';
 import { AuthGuard } from './auth.guard';
-import { TokenError } from '@angular/compiler/src/ml_parser/lexer';
 import { TokenInterceptor } from './token-interceptor.service';
 import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
 import { InstrnComponent } from './pages/user/instrn/instrn.component';
@@ -42,6 +41,7 @@ import { StartComponent } from './pages/user/start/start.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AnsComponent } from './pages/user/ans/ans.component';
+
 
 
 @NgModule({
@@ -77,6 +77,7 @@ import { AnsComponent } from './pages/user/ans/ans.component';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
@@ -88,7 +89,7 @@ import { AnsComponent } from './pages/user/ans/ans.component';
     MatSelectModule,
     MatSlideToggleModule,
     MatRadioModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
 
 
   

@@ -1,5 +1,6 @@
 import { HttpClientJsonpModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/login.service';
@@ -17,12 +18,14 @@ export class LoginComponent implements OnInit {
     password:''
   };
   info:any;
+
   
   constructor(private snack:MatSnackBar, private login:LoginService,private user:UserService,
     private router:Router) { }
 
   ngOnInit(): void {
   }
+
   formSubmit()
   {
     console.log(this.loginData);
